@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>HOME</title>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #002933;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: White;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: black;
+}
+
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+h1{
+color: #00FFFF;
+ font-family: Papyrus;
+ font-size: 30px;
+ text-shadow: 2px 3px red;
+}
+
+p{
+ font-family: "Lucida Console", "Courier New", monospace;
+ font-size:20px;
+}
+.slider{
+ width:1300px;
+ height: 70%;
+ background: url(images/image1.jpg);
+ margin: 100px auto;
+ animation: slide 20s infinite;
+}
+@keyframes slide{
+ 15%{
+ background: url(images/image2.jpg);
+ }
+ 30%{
+ background: url(images/image3.jpg);
+ }
+ 75%{
+ background: url(images/image4.jpg);
+ }
+ 100%{
+ background: url(images/image1.jpg);
+ }
+}
+
+</style>
+
+<style>
+
+.slider{
+ width: 1300px;
+ height: 80%;
+ background: url(image1.jpg);
+ margin: 50px auto;
+}
+
+.content{
+ top: 330px;
+ right: 10px
+}
+
+
+<style>
+
+html{
+background:url('images/beach1.webp') no-repeat center center fixed;
+background-size:cover;
+}
+
+body{
+ background: #000;
+}
+
+.clock{
+ position: absolute;
+ top: 130%;
+ left: 80px;
+ transform: translateX(-50%) translateY(-50%);
+ color: #F0E68C;
+ font-family: Lucida Handwriting;
+ font-size: 25px;
+ border: 3px solid PaleTurquoise;
+ border-radius: 10px;
+ float : right;
+ padding: 0px 5px 0px 5px;
+}
+</style>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<span style="font-size: 3em; color: BlanchedAlmond;">
+  <i class="fas fa-camera"></i>
+  <i class="fas fa-heart"></i>
+  <i class="fas fa-thumbs-up"></i>
+ 
+</span>
+
+</head>
+<body>
+
+
+<ul class="nav">
+  <li><a href=Contact.html>Contact Me</a></li>
+  <li><a href=Gallery.html>Gallery</a></li>
+  <li><a href=Family.html>Family</a></li>
+  <li><a href=Experience.html>Experience</a></li>
+  <li><a href=Education.html>Education</a></li>
+  <li><a href=Biodata.html>Biodata</a></li>
+  <li><a href=index.html>Home</a></li>
+</ul>
+
+<h1>HI, WELCOME TO MY OFFICIAL WEBSITE</h1> 
+<p style="background-color:Tomato;">Hello, my name is Nurul Aini and I'm currently living in Sungai Petani, Kedah, Malaysia.In this Website about I'm a student in course Information Management and a lover of my life</p>
+<div class="slider">
+</div>
+<br>
+<br>
+
+<div class="content"><iframe src="http://free.timeanddate.com/clock/i7ld2mx8/n5088/fn8/fs20/fc009/tcf99/ftb/bas2/bat2/bac909/pa2/tt1/tw0" frameborder="1" width="225" height="31"></iframe>
+</div>
+ <a href='https://www.horando.de/en/'>HORANDO</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5a20be5b17874688e90ca37f61db1d50a4bcca4e'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/774737/t/10"></script>
+
+<br>
+<div id="MyClockDisplay" class="clock"></div>
+<script type="text/javascript">
+	function showtime(){
+	   var date = new Date();
+	   var h = date.getHours(); // 0 - 23
+	   var m = date.getMinutes(); // 0 - 59
+	   var s = date.getSeconds(); // 0 - 59
+	   var session = "AM"
+
+	   if(h == 0){
+		h = 12;
+	   }
+
+	   if(h > 12){
+		h = h - 12;
+		session = "PM"
+	   }
+
+	   h = (h < 10) ? "0" + h : h;
+	   m = (m < 10) ? "0" + m : m;
+	   s = (s < 10) ? "0" + s : s;
+
+	   var time = h + ":" + m + ":" + s + " " + session;
+	   document.getElementById("MyClockDisplay").innertext = time;
+	   document.getElementById("MyClockDisplay").textContent = time;
+	}
+
+
+	setInterval(showtime, 1000);
+</script>
+
+<embed src="audio/soundtrack1.mp3" hidden="true"></embed>
+
+
+<a href="audio/walker.mp3" autoplay="false">walker</a>
+
+
+</body>
+</html>
